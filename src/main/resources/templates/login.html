@@ -9,8 +9,9 @@
 <body>
     <div th:replace="./components/navbar"></div>
     <div class="container mx-auto mt-8">
-        <h1 class="text-2xl font-semibold mb-4">Login</h1>
-        <form th:action="@{/login}" method="post" class="max-w-lg mx-auto p-4 border rounded">
+        <h1 class="text-4xl text-red-500 font-bold mb-10 text-center">Login <span class="text-black">Please!</span></h1>
+        <form th:action="@{/login}" method="post"
+            class="max-w-lg mx-auto border border-base-200 p-10 bg-base-100 rounded-xl shadow-2xl">
             <div class="mb-4">
                 <label class="block text-gray-700">Username</label>
                 <input id="username" type="text" name="username" class="input input-bordered w-full" />
@@ -20,7 +21,8 @@
                 <input type="password" name="password" class="input input-bordered w-full" />
             </div>
             <div class="mb-4">
-                <button type="submit" onclick="storeUsername()" class="btn btn-primary w-full">Login</button>
+                <button type="submit" onclick="storeUsername()"
+                    class="btn btn-outline btn-success w-full">Login</button>
             </div>
         </form>
     </div>
