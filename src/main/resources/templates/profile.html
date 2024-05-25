@@ -9,42 +9,48 @@
 <body>
     <div th:replace="./components/navbar"></div>
     <div class="container mx-auto mt-8">
-        <h1 class="text-2xl font-semibold mb-4">User Profile</h1>
-        <div class="bg-white shadow-md rounded p-6">
-            <div class="mb-4">
-                <label class="block text-gray-700 font-bold">Username</label>
-                <p id="username" class="text-gray-700"></p>
+        <h1 class="text-4xl font-bold mb-10 text-center"><span class="text-red-500">User</span> Profile</h1>
+        <div class="bg-white w-3/4 mx-auto shadow-md rounded-xl p-16 border border-red-300">
+            <div class="flex justify-between text-lg">
+                <div>
+                    <div class="mb-4 flex gap-1">
+                        <label class="block text-gray-700 font-bold">Username:</label>
+                        <p id="username" class="text-gray-700"></p>
+                    </div>
+                    <div class="mb-4 flex gap-1">
+                        <label class="block text-gray-700 font-bold">Email:</label>
+                        <p id="email" class="text-gray-700"></p>
+                    </div>
+                    <div class="mb-4 flex gap-1">
+                        <label class="block text-gray-700 font-bold">Age:</label>
+                        <p id="age" class="text-gray-700"></p>
+                    </div>
+                    <div class="mb-4 flex gap-1">
+                        <label class="block text-gray-700 font-bold">Height:</label>
+                        <p id="height" class="text-gray-700"></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-4 flex gap-1">
+                        <label class="block text-gray-700 font-bold align-left">Name:</label>
+                        <p id="name" class="text-gray-700"></p>
+                    </div>
+                    <div class="mb-4 flex gap-1">
+                        <label class="block text-gray-700 font-bold">Gender:</label>
+                        <p id="gender" class="text-gray-700"></p>
+                    </div>
+                    <div class="mb-4 flex gap-1">
+                        <label class="block text-gray-700 font-bold align-left">Weight:</label>
+                        <p id="weight" class="text-gray-700"></p>
+                    </div>
+                    <div class="mb-4 flex gap-1">
+                        <label class="block text-gray-700 font-bold">Waist Size:</label>
+                        <p id="waistSize" class="text-gray-700"></p>
+                    </div>
+                </div>
             </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 font-bold">Name</label>
-                <p id="name" class="text-gray-700"></p>
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 font-bold">Email</label>
-                <p id="email" class="text-gray-700"></p>
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 font-bold">Gender</label>
-                <p id="gender" class="text-gray-700"></p>
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 font-bold">Age</label>
-                <p id="age" class="text-gray-700"></p>
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 font-bold">Weight</label>
-                <p id="weight" class="text-gray-700"></p>
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 font-bold">Height</label>
-                <p id="height" class="text-gray-700"></p>
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 font-bold">Waist Size</label>
-                <p id="waistSize" class="text-gray-700"></p>
-            </div>
-            <div class="mt-6">
-                <button onclick="editProfile()" class="btn btn-primary">Edit Profile</button>
+            <div class="mt-6 text-center">
+                <button onclick="editProfile()" class="btn btn-info">Edit Profile</button>
             </div>
         </div>
     </div>
